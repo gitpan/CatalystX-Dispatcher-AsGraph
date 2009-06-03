@@ -19,6 +19,12 @@ no_index:
     - inc
     - t
     - xt
+requires:
+  Graph::Easy: 0
+  MooseX::Declare: 0
+  MooseX::Getopt: 0
+  UNIVERSAL::require: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+  repository: http://next.liberation.fr/article/quot-columbo-quot-place-sous-curatelle
+version: 0.02

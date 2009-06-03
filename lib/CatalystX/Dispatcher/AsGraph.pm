@@ -2,7 +2,7 @@ use MooseX::Declare;
 use Graph::Easy;
 use UNIVERSAL::require;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 class CatalystX::Dispatcher::AsGraph {
 
