@@ -1,27 +1,33 @@
-This is Perl module CatalystX::Dispatcher::AsGraph.
+NAME
+    CatalystX::Dispatcher::AsGraph - Create a graph from Catalyst dispatcher
 
-INSTALLATION
+VERSION
+    version 0.03
 
-CatalystX::Dispatcher::AsGraph installation is straightforward. If your CPAN shell is set up,
-you should just be able to do
+SYNOPSIS
+        use CatalystX::Dispatcher::AsGraph;
 
-    % cpan CatalystX::Dispatcher::AsGraph
+        my $graph = CatalystX::Dispatcher::AsGraph->new(
+            appname => 'MyApp',
+            output  => 'myactions.png',
+        );
+        $graph->run;
 
-Download it, unpack it, then build it as per the usual:
+DESCRIPTION
+    CatalystX::Dispatcher::AsGraph create a graph for a Catalyst application
+    using his dispatcher.
 
-    % perl Makefile.PL
-    % make && make test
+    At the time, only private actions are graphed.
 
-Then install it:
+SEE ALSO
+    <http://www.catalystframework.org/calendar/2009/14>
 
-    % make install
+AUTHOR
+      franck cuny <franck@lumberjaph.net>
 
-DOCUMENTATION
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by franck cuny.
 
-CatalystX::Dispatcher::AsGraph documentation is available as in POD. So you can do:
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
-    % perldoc CatalystX::Dispatcher::AsGraph
-
-to read the documentation online with your favorite pager.
-
-Default Name
